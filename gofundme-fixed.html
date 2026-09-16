@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Save Our League Commissioner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        .header {
+            background: white;
+            border-bottom: 1px solid #ddd;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0066cc;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 24px;
+            padding: 24px;
+        }
+
+        .main-content {
+            background: white;
+            border-radius: 8px;
+        }
+
+        .campaign-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .campaign-details {
+            padding: 32px;
+        }
+
+        .campaign-title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            line-height: 1.2;
+        }
+
+        .creator-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .creator-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .creator-text h3 {
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+
+        .creator-text p {
+            font-size: 13px;
+            color: #666;
+        }
+
+        .campaign-body {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .campaign-body p {
+            margin-bottom: 16px;
+        }
+
+        .campaign-body strong {
+            display: block;
+            font-weight: bold;
+            color: #333;
+            margin-top: 16px;
+            margin-bottom: 8px;
+        }
+
+        .campaign-body ul {
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        .campaign-body li {
+            margin-bottom: 6px;
+        }
+
+        .sidebar {
+            background: white;
+            border-radius: 8px;
+            padding: 24px;
+            height: fit-content;
+            position: sticky;
+            top: 80px;
+        }
+
+        .progress-section {
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .progress-amount {
+            font-size: 32px;
+            font-weight: bold;
+            color: #0066cc;
+            margin-bottom: 4px;
+        }
+
+        .progress-goal {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 16px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 12px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: #0066cc;
+            width: 2%;
+        }
+
+        .progress-text {
+            font-size: 13px;
+            color: #666;
+        }
+
+        .donate-button {
+            width: 100%;
+            padding: 16px;
+            background: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 16px 0;
+            transition: background 0.2s;
+        }
+
+        .donate-button:hover {
+            background: #0052a3;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid #eee;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: #666;
+            margin-top: 4px;
+        }
+
+        .info-box {
+            background: #f9f9f9;
+            border-left: 4px solid #0066cc;
+            padding: 16px;
+            margin: 24px 0;
+            border-radius: 4px;
+        }
+
+        .image-carousel {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin: 24px 0;
+        }
+
+        .carousel-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">GoFundMe</div>
+    </div>
+
+    <div class="container">
+        <div class="main-content">
+            <img src="https://raw.githubusercontent.com/ryankbdinsurance-arch/Donate-David-Poirier/main/80068800390__5F05F8FD-D8FA-4E83-9B76-E794ED292A40.jpeg" alt="Campaign Image" class="campaign-image">
+            <div class="campaign-details">
+                <h1 class="campaign-title">🚨 PLEASE HELP: Our League Commissioner Is BROKE 🚨</h1>
+
+                <div class="creator-info">
+                    <div class="creator-avatar">DP</div>
+                    <div class="creator-text">
+                        <h3>Started by Fantasy Concerned Friends</h3>
+                        <p>Trying to help a friend in crisis</p>
+                    </div>
+                </div>
+
+                <div class="campaign-body">
+                    <p>We are raising money for David, a homeless, jobless, penniless fugazi who has somehow been entrusted with the responsibility of COMMISSIONER of our fantasy football league.</p>
+
+                    <p style="color: #d32f2f; font-weight: bold; font-size: 18px;">Yes. This man is in charge.</p>
+
+                    <p>Nobody knows how he got the position. Nobody voted for him. Nobody asked for this. Yet somehow, this unemployed bum has access to league settings, trades, waivers, and the ability to ruin 11 other people's Sundays.</p>
+
+                    <p>Despite his best efforts to contribute absolutely nothing to society, David continues to wake up every morning without a job, without a home, and, most importantly, without enough money to properly manage his fantasy football team.</p>
+
+                    <p><strong>His financial situation has become so desperate that he can no longer afford basic necessities such as:</strong></p>
+                    <ul>
+                        <li>Rent</li>
+                        <li>Groceries</li>
+                        <li>Electricity</li>
+                        <li>A job</li>
+                        <li>A functioning fantasy roster</li>
+                        <li>Self-respect</li>
+                    </ul>
+
+                    <p>Despite having absolutely no financial stability, this man has somehow convinced himself that he is qualified to run an entire fantasy football league.</p>
+
+                    <p>His roster looks like it was assembled by a homeless man making draft picks with his last remaining brain cell, and somehow we're supposed to trust him with commissioner powers.</p>
+
+                    <p><strong>Oh, and before I forget, there is another critical reason this fundraiser is necessary:</strong></p>
+
+                    <p>David Poirier is a vigorous fapper.</p>
+
+                    <p>With no job, no responsibilities, and seemingly unlimited free time, he has apparently dedicated a significant portion of his day to this particular hobby. At this point, we're not even sure whether he's unemployed because he can't find a job or because he simply has other priorities.</p>
+
+                    <p><strong>We are asking the community to come together and help this certified BUM get back on his feet.</strong></p>
+
+                    <p>Your donation could help him afford a meal, pay rent, find employment, fix his fantasy roster, or potentially purchase the one thing money can't buy: common sense.</p>
+
+                    <p>Please donate generously. Every dollar brings this poor excuse for a commissioner one step closer to becoming a functioning member of society.</p>
+
+                    <p style="margin-top: 24px; padding: 16px; background: #fff3cd; border-radius: 4px;">
+                        He may be a fugazi.<br>
+                        He may be a BUM.<br>
+                        He may be completely broke.<br>
+                        He may have no job.<br>
+                        He may have no home.<br>
+                        He may be a gooner.<br>
+                        <strong>But unfortunately, he still has commissioner powers.</strong>
+                    </p>
+
+                    <div class="image-carousel">
+                        <img src="https://raw.githubusercontent.com/ryankbdinsurance-arch/Donate-David-Poirier/main/49EDA5E4-B632-4F53-A2BE-B1720F35F034.jpeg" alt="David in fancy attire" class="carousel-image">
+                    </div>
+
+                    <div class="info-box">
+                        <strong>📢 The Urgent Question:</strong>
+                        <p style="margin-top: 8px;">How does one become so professionally destitute while simultaneously acquiring absolute power over a fantasy football league? Scientists are baffled. We are desperate. Please help.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="progress-section">
+                <div class="progress-amount">$247</div>
+                <div class="progress-goal">raised of $50,000 goal</div>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="progress-text">0% funded • 48 days to go</div>
+            </div>
+
+            <button class="donate-button">Donate</button>
+
+            <div class="stats-grid">
+                <div class="stat">
+                    <div class="stat-number">247</div>
+                    <div class="stat-label">Donations</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Shares</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
